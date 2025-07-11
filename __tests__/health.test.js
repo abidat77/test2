@@ -1,9 +1,9 @@
-import { getHealthStatus, sortHeroesByHealth } from '../src/health.js';
+import { getHealthStatus, sortHeroesByHealth } from '../src/health';
 
 describe('getHealthStatus', () => {
   test('returns "healthy" when health > 50', () => {
     expect(getHealthStatus({ name: 'Маг', health: 90 })).toBe('healthy');
-  })
+  });
 });
 
 describe('sortHeroesByHealth', () => {
